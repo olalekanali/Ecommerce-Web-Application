@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Category from "./pages/Category";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
+import Login from "./pages/Login";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -12,14 +14,16 @@ export default function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/" element={<Category />} />
-          <Route path="/" element={<Category />} />
-          <Route path="/" element={<Category />} />
-          <Route path="/" element={<Product />}>
+          <Route path="/mens" element={<Category />} />
+          <Route path="/womens" element={<Category />} />
+          <Route path="/kids" element={<Category />} />
+          <Route path="/product" element={<Product />}>
             <Route path=":productId"  element={<Product />}/>
           </Route>
-          <Route path="/" element={<Cart />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </main>
   )
