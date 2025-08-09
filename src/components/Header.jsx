@@ -21,12 +21,12 @@ const Header = () => {
         <div className="px-4 flexBetween py-3 max-xs:px-2">
             {/* Logo */}
             <div>
-                <Link><img src={logo} alt="Logo" height={66} width={88} /></Link>
+                <Link to="/"><img src={logo} alt="Logo" height={66} width={88} /></Link>
             </div>
             {/* Navbar Desktop*/}
             <Navbar containerStyles={"hidden md:flex gap-x-5 xl:gap-x-10 medium-15"}/>
             {/* Navbar Mobile */}
-            <Navbar containerStyles={`${menuOpened ? "flex item-start flex-col gap-y-12 fixed top-20 right-8 p-12 bg-white rounded-3xl shadow-md w-64 medium-1t ring-1 ring-slate-900/5 transition-all duration-300" : 
+            <Navbar containerStyles={`${menuOpened ? "flex items-start flex-col gap-y-12 fixed top-20 right-8 p-12 bg-white rounded-3xl shadow-md w-64 medium-16 ring-1 ring-slate-900/5 transition-all duration-300" : 
               "flex item-start flex-col gap-y-12 fixed top-20 p-12 bg-white rounded-3xl shadow-md w-64 medium-1t ring-1 ring-slate-900/5 transition-all duration-300 -right-[100%]"}`}/>
             {/* Buttons */}
             <div className="flexBetween sm:gap-x-2 bold-16">
