@@ -2,7 +2,7 @@ import LATEST from "../assets/latest"
 import Item from "./Item"
 
 
-const Popular = () => {
+const Latest = () => {
   return (
     <section className="bg-primary">
         <div className="max_padd_container py-12 xl:py-28 xl:w-[88%]">
@@ -19,4 +19,4 @@ const Popular = () => {
   )
 }
 
-export default Popular
+export default Latest
