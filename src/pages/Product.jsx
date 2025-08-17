@@ -2,12 +2,12 @@ import React, { useContext } from "react";
 import { ShopContext } from "../Context/ShopContext";
 import { useParams } from "react-router-dom";
 import ProductHd from "../components/ProductHd";
+import ProductDisplay from "../components/ProductDisplay";
 
 const Product = () => {
   const { all_products } = useContext(ShopContext);
   const { productId } = useParams();
 
-  // Fix: use "=>" instead of "="
   const product = all_products.find((e) => e.id === Number(productId));
   
   if (!product) {
@@ -15,9 +15,10 @@ const Product = () => {
   }
 
   return (
-    <section>
+    <section className="max_padd_container py-28">
       <div>
-        <ProductHd product={product} />
+      <ProductHd product={product} />
+      <ProductDisplay product={product} />
       </div>
     </section>
   );
