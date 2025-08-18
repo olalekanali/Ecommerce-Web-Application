@@ -15,10 +15,10 @@ const ProductDisplay = (props) => {
             {/* Left Hand Side */}
             <div className='flex gap-x-2'>
                 <div className='flex flex-col gap-[7px] flex-wrap'>
-                    <img src={product_rt_1} alt="productImage" className='max-h-[99px]' />
-                    <img src={product_rt_2} alt="productImage" className='max-h-[99px]' />
-                    <img src={product_rt_3} alt="productImage" className='max-h-[99px]' />
-                    <img src={product_rt_4} alt="productImage" className='max-h-[99px]' />
+                    <img src={product_rt_1} alt="productImage" className='max-h-[99px] xl:max-h-none xl:h-[99px]' />
+                    <img src={product_rt_2} alt="productImage" className='max-h-[99px] xl:max-h-none xl:h-[99px]' />
+                    <img src={product_rt_3} alt="productImage" className='max-h-[99px] xl:max-h-none xl:h-[99px]' />
+                    <img src={product_rt_4} alt="productImage" className='max-h-[99px] xl:max-h-none xl:h-[99px]' />
                 </div>
                 <div>
                     <img src={product.image} alt="" />
